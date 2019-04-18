@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/create_title"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editTime"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTitle"
+        android:text="@string/create_time"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="hh:mm"
+        android:inputType="time"
+        android:layout_alignLeft="@+id/editDesc"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time"
+        android:text="@string/create_desc"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTime"
+        android:layout_toRightOf="@+id/desc"
+        android:gravity="top"
+        android:lines="3"
+        android:scrollbars="vertical"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editDesc"
+        android:layout_toLeftOf="@+id/butSaveApoint"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/butSaveApoint"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editDesc"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="25dp"
+        android:text="Save" />
+
+</RelativeLayout>

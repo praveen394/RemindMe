@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Praveen.remindme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <uses-permission 
+        android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.Praveen.remindme.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".CreateAppointment"
+            android:label="Create Appointments">
+        </activity>
+        <activity 
+            android:name=".ViewAppointments"
+            android:label="View/Edit Appointments">
+        </activity>
+        <activity 
+            android:name=".DeleteAppointments"
+            android:label="Delete Appointments">
+        </activity>
+        <activity 
+            android:name=".MoveAppointment"
+            android:label="Move Appointments">
+        </activity>
+        <activity 
+            android:name=".SearchAppointments"
+            android:label="Search Appointments">
+        </activity>
+        <activity 
+            android:name=".TranslateAppointment"
+            android:label="Translate Appointments">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+client id - praveenTranslateTest
+client secret - ZOwYrDa7W9yTQN7toODHM2YPg+SvIRXpC5lnKPfYoPM=

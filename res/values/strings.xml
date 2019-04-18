@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RemindMe</string>
+    
+    <string name="appo">Appointments</string>
+    <string name="appo_create">Create</string>
+    <string name="appo_view">Edit</string>
+    <string name="appo_delete">Delete</string>
+    <string name="appo_move">Move</string>
+    <string name="appo_search">Search</string>
+    <string name="appo_translate">Translate</string>
+    
+    <string name="create_title">Title:</string>
+    <string name="create_time">Time:</string>
+    <string name="create_desc">Description:</string>
+    <string name="create_date">Date:</string>
+    
+    
+    <string name="delete_tv">Enter ID:</string>
+    <string name="delete_all">Delete all</string>
+    <string name="delete_single">Delete single</string>
+    
+    <string name="update">Edit</string>
+    <string name="edit">Update</string>
+    <string name="del">Delete</string>
+    
+    <string name="date">Choose Date</string>
+    
+    <string name="search">Search :</string>
+    <string name="butSearch">Search</string>
+    
+    <string name="id">Enter ID:</string>
+    <string name="fromLang">From:</string>
+    <string name="toLang">To:</string>
+    <string name="translateButton">Translate</string>
+    <string name="updateButton">Update</string>
+    <string name="translate_error">(Translation error)</string>
+</resources>

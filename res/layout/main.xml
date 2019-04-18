@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"/>
+
+    <TextView
+        android:id="@+id/Appo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/appo"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/butCreatAppointment"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:padding="10dip"
+            android:text="@string/appo_create"/>
+
+        <Button
+            android:id="@+id/butViewAppointment"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:padding="10dip"
+            android:text="@string/appo_view" />
+
+        <Button
+            android:id="@+id/butMoveAppointment"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/butCreatAppointment"
+            android:layout_below="@+id/butCreatAppointment"
+            android:padding="10dip"
+            android:text="@string/appo_move" />
+
+        <Button
+            android:id="@+id/butDeleteAppointment"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/butViewAppointment"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/butViewAppointment"
+            android:padding="10dip"
+            android:text="@string/appo_delete" />
+
+        <Button
+            android:id="@+id/butSearchAppointment"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/butMoveAppointment"
+            android:padding="10dip"
+            android:text="@string/appo_search" />
+
+        <Button
+            android:id="@+id/butTranslateAppointment"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/butDeleteAppointment"
+            android:padding="10dip"
+            android:text="@string/appo_translate" />
+    </RelativeLayout>
+
+</LinearLayout>

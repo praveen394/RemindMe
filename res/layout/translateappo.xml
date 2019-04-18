@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+
+    <TextView
+        android:id="@+id/trans_show_records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/trans_show_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/trans_show_records"
+        android:text="@string/id"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/trans_edit_enter_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/trans_show_id"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/trans_edit_enter_id"
+        android:layout_marginTop="15dp"
+        android:text="@string/fromLang"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/from_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/trans_edit_enter_id"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/from_language"
+        android:layout_below="@+id/from_language"
+        android:text=""
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="14dp"
+        android:text="@string/toLang"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/to_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desc"
+        android:layout_below="@+id/textView2" />
+
+    <Button
+        android:id="@+id/translate_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/to_language"
+        android:layout_below="@+id/to_language"
+        android:layout_marginTop="20dp"
+        android:text="@string/translateButton" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/translate_button"
+        android:layout_below="@+id/translate_button"
+        android:layout_marginTop="20dp"
+        android:text="@string/updateButton" />
+
+    <TextView
+        android:id="@+id/translated_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/translate_button"
+        android:text=""
+        android:textSize="18sp"/>
+
+</RelativeLayout>
